@@ -8,7 +8,7 @@
     "dev": "next server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "npm run export",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thomas Parker <thomas.parker@smartbizloans.com> (https://www.smartbizloans.com/)",
