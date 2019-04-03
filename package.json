@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "export": "next export",
+    "export": "npm run build && next export",
     "dev": "next server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
