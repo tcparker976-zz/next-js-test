@@ -1,5 +1,6 @@
 import Layout from '../components/Layout.js'
 import Link from 'next/link'
+import Head from 'next/head'
 
 function getPosts() {
   return [
@@ -36,6 +37,9 @@ const PostLink = ({ post }) => (
 export default function Blog() {
   return (
     <Layout>
+      <Head>
+        <title>Next Js Test</title>
+      </Head>
       <h1>My Blog</h1>
       <ul>
         {getPosts().map(post => (

@@ -1,10 +1,9 @@
-import Document, { Head } from 'next/document'
+import Document, { Html, Head, Main, NextScript  } from 'next/document'
 
 export default class myDocument extends Document {
   render() {
-    const { html } = this.props
     return (
-      <html>
+      <Html>
         <Head>
           <link rel='canonical' href='/' />
           <meta name='viewport' content='width=device-width,minimum-scale=1' />
@@ -15,9 +14,10 @@ export default class myDocument extends Document {
           <meta name="google-site-verification" content="bCj3HhIqDlnOUnl8OuWzxcoPCcWXIYLNEI68kALtrKQ" />
         </Head>
         <body>
-          <div id='__next' dangerouslySetInnerHTML={{ __html: html }} />
+          <Main />
+          <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
