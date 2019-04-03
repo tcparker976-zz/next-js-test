@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "export": "npm run build && next export",
-    "dev": "next server.js",
+    "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "heroku-postbuild": "npm run export",
+    "start": "next start -p $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thomas Parker <thomas.parker@smartbizloans.com> (https://www.smartbizloans.com/)",
